@@ -1,18 +1,13 @@
-function showTopBar(){
-    let country = "France";
-    let vat = 20;
-    setTimeout(() => {
-        document.querySelector("section.country-bar")
-        .innerHTML = `<p>Orders to <b>${country}</b> are subject to <b>${vat}%</b> VAT</p>`
-        document.querySelector("section.country-bar")
-        .classList.remove('hidden')
-    }, 1000);
+function showTopBar() {
+  const country = "France";
+  const vat = 20;
+  const countryBar = document.querySelector("section.country-bar");
+
+  countryBar.innerHTML = `<p>Orders to <b>${country}</b> are subject to <b>${vat}%</b> VAT</p>`;
+
+  requestAnimationFrame(() => {
+    countryBar.classList.add("visible");
+  });
 }
 
-
-
-showTopBar();
-
-
-
-
+document.addEventListener("DOMContentLoaded", showTopBar);
