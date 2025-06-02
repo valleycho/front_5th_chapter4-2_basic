@@ -26,9 +26,25 @@
         <!-- End Google Tag Manager -->
 
         <!-- Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
-        <script defer type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
+        <script defer type="text/javascript" src="https://www.freeprivacypolicy.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
         <script defer type="text/javascript" charset="UTF-8">
-            cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"light","language":"en","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"Performance Course"});
+            window.addEventListener('load', function() {
+                if (window.cookieconsent) {
+                    cookieconsent.run({
+                        "notice_banner_type": "simple",
+                        "consent_type": "express",
+                        "palette": "light",
+                        "language": "en",
+                        "page_load_consent_levels": ["strictly-necessary"],
+                        "notice_banner_reject_button_hide": false,
+                        "preferences_center_close_button_hide": false,
+                        "page_refresh_confirmation_buttons": false,
+                        "website_name": "Performance Course"
+                    });
+                } else {
+                    console.warn('Cookie consent script not loaded');
+                }
+            });
         </script>
               
     </head>
@@ -55,7 +71,7 @@
                         <li><a href="about.html">About us</a></li>
                         <li><a href="index.html#best-sellers-section">Best Sellers</a></li>
                         <li><a href="index.html#newsletter-section">Newsletter</a></li>
-                        <li class="menu-icon"><img src="images/menu_icon.webp" width="24" height="17" alt="menu icon"></li>
+                        <li class="menu-icon"><img src="images/menu_icon.webp" width="36" height="26" alt="menu icon"></li>
                     </ul>
                 </nav>
             </div>
@@ -64,7 +80,7 @@
         <section class="hero">
             <picture>
                 <source
-                  srcset="images/Hero_Mobile_425.webp"
+                  srcset="images/Hero_Mobile.webp"
                   media="(max-width: 575px)"
                   type="image/webp"
                 />
