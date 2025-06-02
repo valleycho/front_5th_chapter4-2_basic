@@ -93,7 +93,7 @@
         </header>
         
         <section class="hero">
-            <picture>
+            <picture class="hero-image">
                 <source
                   srcset="images/Hero_Mobile.webp"
                   media="(max-width: 575px)"
@@ -106,10 +106,13 @@
                 />
                 <img
                   src="images/Hero_Desktop.webp"
-                  width="100%"
-                  height="450"
                   alt="VR Banner Image"
-                  fetchpriority="high"
+                  style="
+                    object-fit: cover;
+                    aspect-ratio: 16/9;
+                    width: 100%;
+                    height: 100%;
+                  "
                 />
               </picture>
 
@@ -137,7 +140,17 @@
 
                     <div class="product new">
                         <div class="product-picture">
-                            <img src="images/vr1.webp" alt="product: Penom Case" width="86" height="86">
+                            <img 
+                            src="images/vr1.webp" 
+                            alt="product: Penom Case" 
+                            width="86" 
+                            height="86"
+                            loading="lazy"
+                            style="
+                                aspect-ratio: 1/1;
+                                object-fit: contain;
+                            "
+                        >
                         </div>
                         <div class="product-info">
                             <h3 class="categories">Headsets, Apple</h3>
@@ -151,7 +164,14 @@
 
                     <div class="product new">
                         <div class="product-picture">
-                            <img src="images/vr2.webp" alt="product: Noise Cancelling Headphone" width="86" height="86">
+                            <img src="images/vr2.webp" alt="product: Noise Cancelling Headphone" 
+                                width="86" 
+                                height="86" 
+                                loading="lazy"
+                                style="
+                                    aspect-ratio: 1/1;
+                                    object-fit: contain;
+                                ">
                         </div>
                         <div class="product-info">
                             <h3 class="categories">Headsets, PS</h3>
@@ -165,7 +185,14 @@
 
                     <div class="product">
                         <div class="product-picture">
-                            <img src="images/vr3.webp" alt="product: Canon Digital SLR EOS Rebel T6" width="86" height="86">
+                            <img src="images/vr3.webp" alt="product: Canon Digital SLR EOS Rebel T6" 
+                                width="86" 
+                                height="86" 
+                                loading="lazy"
+                                style="
+                                    aspect-ratio: 1/1;
+                                    object-fit: contain;
+                                ">
                         </div>
                         <div class="product-info">
                             <h3 class="categories">Headsets, Oculus</h3>
