@@ -14,6 +14,7 @@
             onload="this.media='all'"
         >
         <link rel="stylesheet" href="/css/styles.css">
+
         <!-- <link rel="stylesheet" type="text/css" href="/css/slick.css"/> -->
         <!-- Google Tag Manager -->
         <script async>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -54,17 +55,32 @@
                         <li><a href="about.html">About us</a></li>
                         <li><a href="index.html#best-sellers-section">Best Sellers</a></li>
                         <li><a href="index.html#newsletter-section">Newsletter</a></li>
-                        <li class="menu-icon"><img src="images/menu_icon.webp" ></li>
+                        <li class="menu-icon"><img src="images/menu_icon.webp" width="24" height="17"></li>
                     </ul>
                 </nav>
             </div>
         </header>
         
         <section class="hero">
-
-            <img class="desktop" src="images/Hero_Desktop.webp">
-            <img class="mobile" src="images/Hero_Mobile.webp">
-            <img class="tablet" src="images/Hero_Tablet.webp">
+            <picture>
+                <source
+                  srcset="images/Hero_Mobile.webp"
+                  media="(max-width: 575px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="images/Hero_Tablet.webp"
+                  media="(min-width: 576px) and (max-width: 959px)"
+                  type="image/webp"
+                />
+                <img
+                  src="images/Hero_Desktop.webp"
+                  width="100%"
+                  height="450"
+                  alt="VR Banner Image"
+                  fetchpriority="high"
+                />
+              </picture>
 
            
             <div class="hero-content">
@@ -90,7 +106,7 @@
 
                     <div class="product new">
                         <div class="product-picture">
-                            <img src="images/vr1.webp" alt="product: Penom Case">
+                            <img src="images/vr1.webp" alt="product: Penom Case" width="86" height="86">
                         </div>
                         <div class="product-info">
                             <h5 class="categories">Headsets, Apple</h5>
@@ -104,7 +120,7 @@
 
                     <div class="product new">
                         <div class="product-picture">
-                            <img src="images/vr2.webp" alt="product: Noise Cancelling Headphone">
+                            <img src="images/vr2.webp" alt="product: Noise Cancelling Headphone" width="86" height="86">
                         </div>
                         <div class="product-info">
                             <h5 class="categories">Headsets, PS</h5>
@@ -118,7 +134,7 @@
 
                     <div class="product">
                         <div class="product-picture">
-                            <img src="images/vr3.webp" alt="product: Canon Digital SLR EOS Rebel T6">
+                            <img src="images/vr3.webp" alt="product: Canon Digital SLR EOS Rebel T6" width="86" height="86">
                         </div>
                         <div class="product-info">
                             <h5 class="categories">Headsets, Oculus</h5>
